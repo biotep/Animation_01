@@ -50,6 +50,8 @@ public class Every
              * Setting this property to True will cause the IsTriggered to return True on the next call.
              * This is for git testing
 						 * and This is for git testing too
+						* and This is for git testing too
+						* and This is for git testing too
              * Why is this useful? For example, if you have something that happens every 60 seconds, you would
              * create this object with
              *
