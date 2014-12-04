@@ -16,7 +16,7 @@ public class Every
 		_tickCount = 0;
 		_lastMoment = Time.time;
 	}
-	
+
 	/// <summary>
 	/// Returns True if the event should happen, false otherwise.
 	/// <remarks>Setting this property to True forces the IsTriggered to fire on next call</remarks>
@@ -26,9 +26,9 @@ public class Every
 		get
 		{
 			_tickCount = 0;
-			
+
 			float currentTime = Time.time;
-			
+
 			if (currentTime < _lastMoment + _interval)
 			{
 				return false;
@@ -48,7 +48,7 @@ public class Every
 		{
 			/*
              * Setting this property to True will cause the IsTriggered to return True on the next call.
-             *
+             * This is for git testing
              * Why is this useful? For example, if you have something that happens every 60 seconds, you would
              * create this object with
              *
@@ -64,7 +64,7 @@ public class Every
 				_lastMoment -= _interval;
 		}
 	}
-	
+
 	/// <summary>
 	/// Returns true if events accumulated after the last call to IsTriggered
 	/// </summary>
@@ -75,7 +75,7 @@ public class Every
 			return _tickCount > 0;
 		}
 	}
-	
+
 	/// <summary>
 	/// Returns the number of accumulated events after the last call to IsTriggered.
 	/// </summary>
@@ -86,9 +86,8 @@ public class Every
 			return _tickCount;
 		}
 	}
-	
+
 	private int _tickCount;
 	private float _lastMoment;
 	private float _interval;
 }
-
