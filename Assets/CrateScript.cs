@@ -22,7 +22,7 @@ public class CrateScript : MonoBehaviour {
 	public GameObject astroguy;
 
 
-	// Use this for initialization
+	// Use this for initialization and this is a test comment
 	void Start () {
 		transform.position=startPosition;
 		//gameObject.GetComponent.<Rigidbody2D>().gravityScale = 0;
