@@ -149,7 +149,7 @@ public class CrateScript : MonoBehaviour {
 		{
 			Invoke("Explode",0.3f);
 		}
-		else if (cratetype == "crate2")
+		else if (cratetype != "crate1")
 		{
 			Invoke("OpenCrate",1f);
 		}
@@ -161,7 +161,7 @@ public class CrateScript : MonoBehaviour {
 		GameObject astro = Instantiate(astroguy, transform.position, Quaternion.identity) as GameObject;
 
 
-		 destroy();
+		destroy();
 	}
 
 	public void Explode()

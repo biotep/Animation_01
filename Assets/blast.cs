@@ -20,7 +20,6 @@ public class blast : MonoBehaviour {
 
 		transform.GetComponent<CircleCollider2D>().radius=currentradius;
 
-	
 	}
 
 	void RadiusChanging(){

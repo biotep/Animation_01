@@ -28,7 +28,7 @@ public class GravWall : MonoBehaviour {
 	
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if ( other.GetComponent<CrateScript>().dropping == false)
+		if ( other.tag=="Crate" && other.GetComponent<CrateScript>().dropping == false)
 		{
 			if (other.transform.position.x > 0)
 			{

@@ -88,6 +88,7 @@
      <Compile Include="Assets\blast.cs" />
      <Compile Include="Assets\gravblock.cs" />
      <Compile Include="Assets\leftwallscript.cs" />
+     <Compile Include="Assets\testscript.cs" />
      <Compile Include="Assets\unitscript.cs" />
      <None Include="Assets\PorglezompPyroclastics\Shaders\ExplosionHigh.shader" />
      <None Include="Assets\PorglezompPyroclastics\Shaders\ExplosionLow.shader" />
